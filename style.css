@@ -1,0 +1,149 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	max-width:1000px;
+	margin:0 auto;
+	background-image: url('fon.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.buttons{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 60px;
+}
+.buttons>button, nav>button{
+	color: white;
+	font-family: roboto,sans-serif;
+	border-style: none;
+	text-shadow: 1px 1px 2px black;
+}
+.buttons> button:nth-child(1){
+	background-color:cyan; 
+}
+.buttons> button:nth-child(2){
+	background-color:green; 
+}
+.buttons> button:nth-child(3){
+	background-color:red; 
+}
+.buttons> button:nth-child(4){
+	background-color:orange; 
+}
+.buttons> button:nth-child(5){
+	background-color:yellow; 
+}
+.buttons> button:nth-child(6){
+	background-color:blue; 
+}
+.icons>img{
+	width:7%;
+}
+.zip{
+	font-family: roboto,sans-serif;
+	color: white;
+}
+.icons{
+	display: flex;
+	justify-content: space-between;
+	align-items: : center;
+	margin: 20px 0;
+}
+.tel{
+	font-size:25px;
+	color: white;
+	font-family: roboto,sans-serif;
+
+}
+/*Основная часть*/
+body>section{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin-top: 20px;
+}
+nav{
+	display: flex;
+	flex-direction: column;
+}
+nav>button{
+	margin-bottom:5px;
+	background-color: Lightsalmon ;
+	/*border-style: none;*/
+	padding: 20px 0;
+}
+main{
+	margin-left: 20px;
+}
+main>article{
+	position: relative;
+}
+main>article>img{
+	max-width: 100%;
+}
+main>article>h1{
+	position: absolute;
+	top:50%;
+	left:50%;
+	font-family: consolas,sans-serif;
+	color: white;
+	font-size: 48px;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	text-shadow: 1px 1px 2px black;
+	text-align: center;
+}
+/*.block{
+	padding: 20px 0;
+	background-color: yellow;
+}*/
+.info{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+.info>p, .advantages>p{
+	padding: 20px;
+	text-align: center;
+}
+.orange{
+	background-color: orange;
+}
+.cyan{
+	background-color: cyan;
+}
+
+.advantages{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+.red{
+	background-color: orangered;
+}
+.green{
+background-color: Lightgreen;
+}
+.blue{
+background-color: Lightblue;
+}
+.lol{
+	margin: 20px 0;
+	text-align: center;
+}
+/*подвал*/
+footer{
+	margin-top: 20px;
+	background-color: rgba(50,50,50,0.75);
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+footer>article>span{
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+}
